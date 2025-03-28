@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.chat-container {
+    width: 400px;
+    height: 600px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat-box {
+    flex-grow: 1;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    width: 75%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style the messages */
+.user-message, .bot-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    max-width: 75%;
+    clear: both;
+}
+
+.user-message {
+    background-color: #dcf8c6;
+    float: right;
+    text-align: right;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    float: left;
+    text-align: left;
+}
+
+/* Fix the input field at the bottom */
+input[type="text"], button {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
